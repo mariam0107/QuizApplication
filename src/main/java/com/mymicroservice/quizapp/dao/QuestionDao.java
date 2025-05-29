@@ -1,4 +1,9 @@
-package com.mymicroservice.quizapp;
+package com.mymicroservice.quizapp.dao;
 
-public class QuestionDao {
+import com.mymicroservice.quizapp.model.Question;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface QuestionDao extends JpaRepository<Question,Integer> {
 }
