@@ -23,7 +23,6 @@ public class QuestionService {
         }
         return new ResponseEntity<>(new ArrayList<>(), HttpStatus.BAD_REQUEST);
     }
-
     public ResponseEntity<List<Question>> getQuestionsByCategory(String category) {
         try {
             return new ResponseEntity<>(questionDao.findByCategory(category),HttpStatus.OK);
